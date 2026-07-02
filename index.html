@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IntegraMente — Centro de Atención y Cuidado Integral para la Infancia</title>
+  <meta name="description" content="Niñeras, apoyo educativo, estimulación temprana e inglés en Paraíso de Cartago, Costa Rica." />
+  <link rel="icon" type="image/png" href="images/logo-icon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" role="banner">
+    <div class="container nav__inner">
+
+      <a href="#inicio" class="nav__brand" aria-label="IntegraMente — inicio">
+        <img src="images/logo-icon.png" alt="" aria-hidden="true" />
+        <div class="nav__brand-text">
+          <span class="nav__brand-name">Integra<span>Mente</span></span>
+          <span class="nav__brand-sub">Centro de Atención Integral</span>
+        </div>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav__links">
+          <li><a href="#servicios" data-i18n="nav_services">Servicios</a></li>
+          <li><a href="#horarios" data-i18n="nav_schedule">Horarios</a></li>
+          <li><a href="#talleres" data-i18n="nav_workshops">Talleres</a></li>
+          <li><a href="#nosotros" data-i18n="nav_about">Nosotros</a></li>
+          <li>
+            <a href="https://wa.me/50671860485" target="_blank" rel="noopener"
+               class="nav__cta" data-i18n="nav_cta">Escríbenos</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button data-lang="es" class="active" aria-label="Español">ES</button>
+        <button data-lang="en" aria-label="English">EN</button>
+      </div>
+
+      <button class="nav__hamburger" id="hamburger"
+              aria-controls="mobile-nav" aria-expanded="false" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile nav -->
+  <nav class="nav__mobile" id="mobile-nav" aria-label="Navegación móvil">
+    <a href="#servicios" data-i18n="nav_services">Servicios</a>
+    <a href="#horarios" data-i18n="nav_schedule">Horarios</a>
+    <a href="#talleres" data-i18n="nav_workshops">Talleres</a>
+    <a href="#nosotros" data-i18n="nav_about">Nosotros</a>
+    <a href="#contacto" data-i18n="nav_contact">Contacto</a>
+    <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+      <button data-lang="es" class="active" aria-label="Español">ES</button>
+      <button data-lang="en" aria-label="English">EN</button>
+    </div>
+  </nav>
+
+  <main id="inicio">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+
+        <div class="hero__content">
+          <p class="hero__eyebrow" data-i18n="hero_eyebrow">Paraíso de Cartago, Costa Rica</p>
+          <h1 class="hero__title" id="hero-title" data-i18n="hero_title">
+            Cuidado integral para <em>tu hijo</em>, con amor y profesionalismo
+          </h1>
+          <p class="hero__sub" data-i18n="hero_sub">
+            Niñeras, apoyo educativo, estimulación temprana e inglés — todo en un solo lugar, cerca de ti.
+          </p>
+          <div class="hero__actions">
+            <a href="https://wa.me/50671860485" target="_blank" rel="noopener"
+               class="btn-primary" data-i18n="hero_cta">
+              <!-- WhatsApp icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              <span data-i18n="hero_cta">Consultar por WhatsApp</span>
+            </a>
+            <a href="#servicios" class="btn-secondary" data-i18n="hero_more">Ver servicios</a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__logo-card">
+            <img src="images/logo-icon.png" alt="IntegraMente logo" />
+            <div class="hero__logo-card-name">Integra<span>Mente</span></div>
+            <div class="hero__logo-card-sub">Centro de Atención y Cuidado<br>Integral para la Infancia</div>
+            <div class="hero__badge-row">
+              <span class="hero__badge" data-i18n="badge_ages">Edades 0–12 años</span>
+              <span class="hero__badge" data-i18n="badge_bilingual">Español · Inglés</span>
+              <span class="hero__badge" data-i18n="badge_pme">Experiencia con PME</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== TRUST BAR ===================== -->
+    <div class="trust-bar" aria-label="Estadísticas">
+      <div class="container trust-bar__grid">
+        <div class="trust-item">
+          <div class="trust-item__number" data-i18n="trust_years_n">5+</div>
+          <div class="trust-item__label" data-i18n="trust_years_l">años de experiencia</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-item__number" data-i18n="trust_kids_n">100+</div>
+          <div class="trust-item__label" data-i18n="trust_kids_l">niños atendidos</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-item__number" data-i18n="trust_avail_n">7</div>
+          <div class="trust-item__label" data-i18n="trust_avail_l">días disponibles</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section class="section" id="servicios" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow" data-i18n="services_eyebrow">Lo que ofrecemos</p>
+          <h2 class="section__title" id="services-title" data-i18n="services_title">
+            Servicios pensados para cada familia
+          </h2>
+          <p class="section__sub" data-i18n="services_sub">
+            Precios por hora, sin mensualidades forzosas. Elegís el servicio que más se adapta a tu familia.
+          </p>
+        </div>
+
+        <div class="services__grid">
+
+          <article class="service-card">
+            <div class="service-card__icon" style="background:#e8f2ec">📚</div>
+            <h3 class="service-card__title" data-i18n="svc1_title">Apoyo Educativo</h3>
+            <p class="service-card__desc" data-i18n="svc1_desc">
+              Refuerzo escolar con paciencia y dedicación. Tareas, comprensión lectora y más.
+            </p>
+            <div class="service-card__price">
+              <span data-i18n="svc1_price">₡2.500</span>
+              <span data-i18n="per_hour">/ hora</span>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" style="background:#e8f0f7">🌐</div>
+            <h3 class="service-card__title" data-i18n="svc2_title">Clases de Inglés</h3>
+            <p class="service-card__desc" data-i18n="svc2_desc">
+              Aprendizaje divertido y natural desde edades tempranas, con enfoque comunicativo.
+            </p>
+            <div class="service-card__price">
+              <span data-i18n="svc2_price">₡3.500</span>
+              <span data-i18n="per_hour">/ hora</span>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" style="background:#fef3e8">🧠</div>
+            <h3 class="service-card__title" data-i18n="svc3_title">Estimulación a Tiempo</h3>
+            <p class="service-card__desc" data-i18n="svc3_desc">
+              Para edades preescolares (1–4 años). Desarrollo motor, cognitivo, social y del lenguaje.
+            </p>
+            <div class="service-card__price">
+              <span data-i18n="svc3_price">₡2.500</span>
+              <span data-i18n="per_hour">/ hora</span>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" style="background:#f3eef8">🏠</div>
+            <h3 class="service-card__title" data-i18n="svc4_title">Servicio de Niñeras</h3>
+            <p class="service-card__desc" data-i18n="svc4_desc">
+              En tu hogar o en nuestras instalaciones. Personal capacitado, cariñoso y confiable.
+            </p>
+            <div class="service-card__price">
+              <span data-i18n="svc4_price">Desde ₡1.300</span>
+              <span data-i18n="per_hour">/ hora</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SCHEDULE ===================== -->
+    <section class="section" id="horarios" aria-labelledby="schedule-title">
+      <div class="container">
+        <div class="schedule">
+          <div>
+            <p class="section__eyebrow" data-i18n="schedule_eyebrow">Disponibilidad</p>
+            <h2 class="section__title" id="schedule-title" data-i18n="schedule_title">Horarios de atención</h2>
+            <p class="section__sub" data-i18n="schedule_sub">
+              Disponibles cuando más nos necesitás — tardes entre semana y fines de semana completos.
+            </p>
+            <p class="schedule__note" data-i18n="schedule_note">
+              * El servicio de niñeras fuera de Paraíso incluye un monto adicional de transporte.
+            </p>
+          </div>
+          <div class="schedule__days">
+            <div class="schedule__row">
+              <span class="schedule__day-label" data-i18n="schedule_thu_fri">Jueves y Viernes</span>
+              <span class="schedule__time">4:00 PM – 12:00 AM</span>
+            </div>
+            <div class="schedule__row">
+              <span class="schedule__day-label" data-i18n="schedule_sat_sun">Sábado y Domingo</span>
+              <span class="schedule__time">10:00 AM – 12:00 AM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TALLERES BANNER ===================== -->
+    <div class="container" id="talleres">
+      <div class="talleres" aria-labelledby="talleres-title">
+        <div>
+          <h2 class="talleres__title" id="talleres-title" data-i18n="talleres_title">Talleres actuales</h2>
+          <p class="talleres__sub" data-i18n="talleres_sub">
+            Programas especiales de corta duración con cupos limitados. ¡Consultá disponibilidad!
+          </p>
+        </div>
+        <div class="talleres__cards">
+          <a href="talleres/verano.html" class="taller-pill" data-i18n="taller1">☀️ Taller de Verano</a>
+          <a href="talleres/lecto-escritura.html" class="taller-pill" data-i18n="taller2">✏️ Lectoescritura Neuro Enfoque</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section about" id="nosotros" aria-labelledby="about-title">
+      <div class="container about__inner">
+        <div>
+          <p class="section__eyebrow" data-i18n="about_eyebrow">Quiénes somos</p>
+          <h2 class="section__title" id="about-title" data-i18n="about_title">
+            Un espacio diseñado para el crecimiento integral de tu hijo
+          </h2>
+          <p class="section__sub" data-i18n="about_sub">
+            IntegraMente nació con la convicción de que cada niño merece cuidado, amor y oportunidades para crecer.
+          </p>
+          <div class="about__values">
+            <div class="value-item">
+              <div class="value-item__dot"></div>
+              <div>
+                <div class="value-item__title" data-i18n="val1_title">Cuidado profesional</div>
+                <div class="value-item__desc" data-i18n="val1_desc">
+                  Personal con formación en infancia, primeros auxilios y protocolos de seguridad.
+                </div>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-item__dot"></div>
+              <div>
+                <div class="value-item__title" data-i18n="val2_title">Enfoque humanista</div>
+                <div class="value-item__desc" data-i18n="val2_desc">
+                  Amor, respeto y empatía en cada interacción con niños y familias.
+                </div>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-item__dot"></div>
+              <div>
+                <div class="value-item__title" data-i18n="val3_title">Inclusión y diversidad</div>
+                <div class="value-item__desc" data-i18n="val3_desc">
+                  Experiencia comprobada en el acompañamiento de niños con necesidades especiales (PME).
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__visual">
+          <img src="images/logo-icon.png" alt="IntegraMente" />
+          <div class="about__tagline" data-i18n="about_tagline">Con amor, educamos para la vida.</div>
+          <div class="about__location">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--muted)" aria-hidden="true">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+            <span data-i18n="about_location">Paraíso de Cartago, Costa Rica</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section contact" id="contacto" aria-labelledby="contact-title">
+      <div class="container contact__inner">
+        <p class="section__eyebrow" data-i18n="contact_eyebrow">Hablemos</p>
+        <h2 class="section__title" id="contact-title" data-i18n="contact_title">¿Querés saber más?</h2>
+        <p class="section__sub" style="margin-inline:auto" data-i18n="contact_sub">
+          Escribinos por WhatsApp y te respondemos a la brevedad. Estamos en tu comunidad, cerca de ti.
+        </p>
+        <a href="https://wa.me/50671860485" target="_blank" rel="noopener" class="contact__whatsapp">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          <span data-i18n="contact_wa">Escribir por WhatsApp</span>
+        </a>
+        <div class="contact__social">
+          <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+            Facebook
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
+            Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="images/logo-icon.png" alt="IntegraMente" />
+        <span class="footer__brand-name">Integra<span>Mente</span></span>
+      </div>
+      <span data-i18n="footer_copy">© 2025 IntegraMente. Todos los derechos reservados.</span>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
